@@ -1,8 +1,11 @@
 async function search(param) {
-  let site = await fetch("https://scratchdb.lefty.one/v3/forum/search?q=", param, "&o=&page=:page");
+  let site = await fetch("https://scratchdb.lefty.one/v3/forum/search?q=", param, "&o=&page=0");
   let result = await site.json();
   return result
 }
 
 let paramara = window.prompt("insert search parameters","");
 const results = JSON.parse(search(paramara));
+
+document.getElementById("searchresults").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[1].lastName;
