@@ -1,5 +1,5 @@
 async function search(param) {
-  let site = await fetch("https://scratchdb.lefty.one/v3/forum/search?q=", param, "&o=&page=0");
+  let site = await fetch("https://scratchdb.lefty.one/v3/forum/search?q=", param, "&o=relevance&page=0");
   let result = await site.json();
   return result
 }
