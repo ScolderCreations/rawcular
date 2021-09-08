@@ -7,5 +7,4 @@ async function search(param) {
 let paramara = window.prompt("insert search parameters","");
 const results = JSON.parse(search(paramara));
 
-document.getElementById("searchresults").innerHTML =
-obj.results[1].username + ": " + obj.results[1].content;
+document.getElementById("searchresults").innerHTML = obj.results[1].username + ": " + obj.results[1].content;
