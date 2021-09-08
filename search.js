@@ -8,4 +8,4 @@ let paramara = window.prompt("insert search parameters","");
 const results = JSON.parse(search(paramara));
 
 document.getElementById("searchresults").innerHTML =
-obj.employees[1].firstName + " " + obj.employees[1].lastName;
+obj.results[1].username + ": " + obj.results[1].content;
