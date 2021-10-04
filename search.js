@@ -1,7 +1,8 @@
 async function search(param) {
   let url = "https://scratchdb.lefty.one/v3/forum/search?q=", param, "&o=relevance&page=0";
   fetch(url)
-  .then(result => result.json());
+  .then(res => res.json())
+  .then(res => result);
   return result
 }
 
