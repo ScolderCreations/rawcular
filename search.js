@@ -2,8 +2,7 @@ async function search(param) {
   let url = ("https://cors-anywhere.9pfs.repl.co/scratchdb.lefty.one/v3/forum/search?q=" + param + "&o=relevance&page=0");
   fetch(url)
   .then(res => res.json())
-  .then(res => result);
-  return result
+  .then((res) => {return res});
 }
 
 let paramara = window.prompt("insert search parameters","");
